@@ -4,7 +4,6 @@ const express = require("express");
 
 const bodyParser = require("body-parser");
 
-// const request = require("request");
 require("dotenv").config();
 
 const https = require("https");
@@ -78,9 +77,7 @@ app.post("/failure", (req,res) => {
     res.redirect("/");
 })
 
-// 3bb539cd1f15705c9ec62c06cd712997-us14 apikey
 
-// 8795d40288 list id
 
 app.listen(port, () => {
     console.log("server is now running")
@@ -101,18 +98,3 @@ app.listen(port, () => {
 
 
 
-// const client = require("mailchimp-marketing");
-
-// client.setConfig({
-//   apiKey: "YOUR_API_KEY",
-//   server: "YOUR_SERVER_PREFIX",
-// });
-
-// const run = async () => {
-//   const response = await client.lists.batchListMembers("list_id", {
-//     members: [{}],
-//   });
-//   console.log(response);
-// };
-
-// run();
